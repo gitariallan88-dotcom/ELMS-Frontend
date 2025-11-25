@@ -1,7 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
 import Card from "../../components/Card";
-
 const AdminDashboard = () => {
   return (
     <div className="flex min-h-screen">
@@ -10,7 +9,7 @@ const AdminDashboard = () => {
         <Navbar title="Admin Dashboard" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <Card title="Total Employees">
-            <p>25</p>
+            <p className="text-blue-500">25</p>
           </Card>
           <Card title="Pending Leave Requests">
             <p>3</p>

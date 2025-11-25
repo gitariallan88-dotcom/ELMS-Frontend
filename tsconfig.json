@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "module": "ESNext",
-    // "moduleResolution": "Node",
     "target": "ESNext",
+    "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
-    "jsx": "react-jsx"
+    "lib": ["dom", "dom.iterable", "esnext"]
   }
 }

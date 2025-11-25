@@ -1,8 +1,9 @@
-const App=()=>{
-  return(
-    <div>
-      <h1>Testing..</h1>
-    </div>
+import AppRoutes from "./routes/AppRoutes"
+const App = () => {
+  return (
+    <>
+      <AppRoutes/>
+    </>
   )
 }
 
