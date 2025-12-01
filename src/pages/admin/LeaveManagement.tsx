@@ -6,6 +6,7 @@ import Button from "../../components/Button";
 const sampleLeaves = [
   { id: 1, employee: "John Doe", type: "Annual Leave", days: 3, status: "Pending" },
   { id: 2, employee: "Jane Smith", type: "Sick Leave", days: 2, status: "Approved" },
+  { id: 3, employee: "Brian Kemboi", type: "Paternity Leave", days: 90, status: "Denied"}
 ];
 
 const LeaveManagement = () => {

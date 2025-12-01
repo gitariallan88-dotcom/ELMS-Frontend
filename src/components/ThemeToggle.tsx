@@ -1,13 +1,19 @@
 import { useTheme } from "../context/ThemeContext";
 
+
 const ThemeToggle = () => {
-  const { darkMode, toggleTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
+
+  const darkTheme = theme === "dark";
   return (
     <button
-      onClick={toggleTheme}
-      className="px-3 py-1 rounded border border-gray-500 dark:border-gray-300"
+      onClick={() => setTheme(darkTheme ? "light" : "dark")}
+      className="px-3 py-1 rounded border border-gray-500 dark:border-gray-300 hover:opacity-30"
+
     >
-      {darkMode ? "Light Mode" : "Dark Mode"}
+      {darkTheme ? "Light Mode" : "Dark Mode"}
+      
+
     </button>
   );
 };

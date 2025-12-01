@@ -1,9 +1,16 @@
 {
   "compilerOptions": {
+    "target": "ES2020",
     "module": "ESNext",
-    "target": "ESNext",
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "lib": ["dom", "dom.iterable", "esnext"]
-  }
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "moduleResolution": "bundler",
+
+    "noEmit": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"]
 }

@@ -16,24 +16,24 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
-      <div className="p-8 bg-white dark:bg-gray-800 rounded shadow-md w-full max-w-md">
-        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center">
+    <div className="flex items-center justify-center min-h-screen bg-gray-700 dark:bg-gray-900">
+      <div className="p-8 bg-stone-300 dark:bg-gray-800 rounded shadow-md w-full max-w-md">
+        <h2 className="text-2xl font-bold mb-6 text-black-900 dark:text-white text-center">
           Employee Leave Management System
         </h2>
 
         <div className="flex flex-col gap-4">
-          <label className="text-gray-700 dark:text-gray-300">
+          <label className="text-black-900 dark:text-gray-300">
             Username:
             <input
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full mt-1 p-2 border rounded dark:bg-gray-700 dark:text-white"
+              className="w-full mt-1 p-2 border rounded dark:bg-gray-70 dark:text-white"
             />
           </label>
 
-          <label className="text-gray-700 dark:text-gray-300">
+          <label className="text-black-900 dark:text-gray-300">
             Role:
             <select
               value={role}

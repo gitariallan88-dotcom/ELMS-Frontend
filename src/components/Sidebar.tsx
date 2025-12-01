@@ -6,18 +6,18 @@ type SidebarProps = {
 
 const Sidebar = ({ role }: SidebarProps) => {
   return (
-    <aside className="w-64 bg-gray-100 dark:bg-gray-800 min-h-screen p-4 shadow">
+    <aside className="w-64 bg-gray-700 dark:bg-gray-800 min-h-screen p-4 shadow">
       <ul className="flex flex-col gap-3">
         {role === "employee" ? (
           <>
             <li>
-              <Link to="/employee/dashboard" className="hover:underline">Dashboard</Link>
+              <Link to="/employee/dashboard" className="hover:opacity-30">Dashboard</Link>
             </li>
             <li>
-              <Link to="/employee/leave-request" className="hover:underline">Request Leave</Link>
+              <Link to="/employee/leave-request" className="hover:opacity-30">Request Leave</Link>
             </li>
             <li>
-              <Link to="/employee/leave-tracker" className="hover:underline">Track Leave</Link>
+              <Link to="/employee/leave-tracker" className="hover:opacity-30">Track Leave</Link>
             </li>
           </>
         ) : (

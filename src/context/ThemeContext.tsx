@@ -1,9 +1,9 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 import type { ReactNode } from "react";
 
 type ThemeContextType = {
-  theme: string;
-  setTheme: (theme: string) => void;
+  theme: "light" | "dark";
+  setTheme: (theme: "light" | "dark") => void;
 };
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -13,7 +13,19 @@ type ThemeProviderProps = {
 };
 
 export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState<"light" | "dark">("light");
+
+  
+
+  useEffect(() => {
+    const html = document.documentElement;
+
+    if (theme === "dark") {
+      html.classList.add("dark");
+    } else {
+      html.classList.remove("dark");
+    }
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

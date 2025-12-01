@@ -9,7 +9,7 @@ const Button = ({ children, onClick, className = "" }: ButtonProps) => {
     <button
       onClick={onClick}
       className={`px-4 py-2 rounded shadow font-medium transition 
-        bg-blue-600 hover:bg-blue-700 text-white dark:bg-blue-500 dark:hover:bg-blue-600 ${className}`}
+        bg-blue-950 hover:bg-blue-100 text-white dark:bg-blue-500 dark:hover:bg-blue-600 ${className}`}
     >
       {children}
     </button>
